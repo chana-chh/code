@@ -1,7 +1,7 @@
 ---
 title: "Hugo instalacija i konfiguracija"
 date: 2019-07-15T20:52:22+02:00
-draft: false
+draft: true
 summary: "Hugo - instalacija, konfiguracija i kreiranje novog sajta."
 slug: "hugo-instalacija-i-konfiguracija"
 keywords: ["hugo", "generator statičkih sajtova"]
@@ -328,5 +328,10 @@ Omogućava verbose zapisivanje u log.
 Prati promene u fajl sistemu i ponovo kreira ako je potrebno.
 <dd>
 </dl>
+
+### config.toml fajl
+
+
+
 
 [^1]: može koristiti i `config.yaml` ili `config.json`

@@ -1,4 +1,4 @@
-baseURL = "code"
+baseURL = "https://chana-chh.github.io/code/"
 languageCode = "sr"
 title = "ChaSha Coding Blog"
 paginate = 5
@@ -7,7 +7,7 @@ pluralizeListTitles = false
 pygmentsCodeFences = true
 footnoteReturnLinkContents = "[nazad]"
 pygmentsStyle = "native" # monokai
-publishDir = "document"
+publishDir = "docs"
 [taxonomies]
 	kategorija = "kategorije"
 	rec = "reči"
