@@ -4,7 +4,7 @@
 
 <body>
     <main>
-        <section id="meni">{{ partial "meni.html" }}</section>
+        <section id="meni">{{ partial "meni.html" . }}</section>
         <div id="zavesa"></div>
         <section id="sadrzaj">{{ block "sadrzaj" . }}{{ end }}</section>
         <section id="dodatak">{{ block "dodatak" . }}{{ end }}</section>
