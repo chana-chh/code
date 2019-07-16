@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kategorije on ChaSha Coding Blog</title>
-    <link>code/kategorije/</link>
+    <link>https://chana-chh.github.io/code/kategorije/</link>
     <description>Recent content in Kategorije on ChaSha Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>sr</language>
     <lastBuildDate>Mon, 15 Jul 2019 20:52:22 +0200</lastBuildDate>
     
-	<atom:link href="code/kategorije/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://chana-chh.github.io/code/kategorije/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>hugo</title>
-      <link>code/kategorije/hugo/</link>
+      <link>https://chana-chh.github.io/code/kategorije/hugo/</link>
       <pubDate>Mon, 15 Jul 2019 20:52:22 +0200</pubDate>
       
-      <guid>code/kategorije/hugo/</guid>
+      <guid>https://chana-chh.github.io/code/kategorije/hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statički sajtovi</title>
-      <link>code/kategorije/stati%C4%8Dki-sajtovi/</link>
+      <link>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-sajtovi/</link>
       <pubDate>Mon, 15 Jul 2019 20:52:22 +0200</pubDate>
       
-      <guid>code/kategorije/stati%C4%8Dki-sajtovi/</guid>
+      <guid>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-sajtovi/</guid>
       <description></description>
     </item>
     

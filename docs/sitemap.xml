@@ -3,77 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>code/autori/</loc>
+    <loc>https://chana-chh.github.io/code/autori/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/</loc>
+    <loc>https://chana-chh.github.io/code/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/autori/chana/</loc>
+    <loc>https://chana-chh.github.io/code/autori/chana/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/html/</loc>
+    <loc>https://chana-chh.github.io/code/html/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/html/hugo-instalacija-i-konfiguracija/</loc>
+    <loc>https://chana-chh.github.io/code/html/hugo-instalacija-i-konfiguracija/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
   </url>
   
   <url>
-    <loc>code/kategorije/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>code/re%C4%8Di/</loc>
+    <loc>https://chana-chh.github.io/code/kategorije/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/re%C4%8Di/hugo/</loc>
+    <loc>https://chana-chh.github.io/code/re%C4%8Di/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/kategorije/hugo/</loc>
+    <loc>https://chana-chh.github.io/code/re%C4%8Di/hugo/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/re%C4%8Di/stati%C4%8Dki-sajt/</loc>
+    <loc>https://chana-chh.github.io/code/kategorije/hugo/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/kategorije/stati%C4%8Dki-sajtovi/</loc>
+    <loc>https://chana-chh.github.io/code/re%C4%8Di/stati%C4%8Dki-sajt/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/arhiva/</loc>
+    <loc>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-sajtovi/</loc>
+    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>code/oblasti/</loc>
+    <loc>https://chana-chh.github.io/code/arhiva/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/oblasti/</loc>
   </url>
   
 </urlset>
