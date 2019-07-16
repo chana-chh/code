@@ -283,6 +283,12 @@ main {
   width: auto;
 }
 
+#meni>#hamburger>#mini-logo {
+  font-size: 2.5rem;
+  margin-top: -.8rem;
+  padding: 0;
+}
+
 #meni>#hamburger.close .linija-1 {
   top: 22px;
   transform: rotate(225deg);

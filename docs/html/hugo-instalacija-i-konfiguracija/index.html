@@ -1,58 +1,86 @@
----
-title: "Hugo instalacija i konfiguracija"
-date: 2019-07-15T20:52:22+02:00
-draft: false
-summary: "Hugo - instalacija, konfiguracija i kreiranje novog sajta."
-slug: "hugo-instalacija-i-konfiguracija"
-keywords: ["hugo", "generator statičkih sajtova"]
-description: "Hugo generator statičkih sajtova"
-kategorije: ["hugo", "statički sajtovi"]
-reči: ["hugo", "statički sajt"]
-autori: ["Chana"]
-mesec: "2019-07"
----
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hugo instalacija i konfiguracija - ChaSha Coding Blog</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="code/css/fontawesome.min.css">
+	<link rel="stylesheet" href="code/css/solid.min.css">
+	<link rel="stylesheet" href="code/css/brands.min.css">
+	<link rel="stylesheet" href="code/css/blog.css">
+	<meta name="keywords" content="hugo,generator statičkih sajtova">
+	<meta name="description" content="Hugo generator statičkih sajtova">
+</head>
 
-## Instalacija
 
-Skinuti poslednju verziju instalacionog fajla na sledećoj [lokaciji](https://github.com/gohugoio/hugo/releases).
+<body>
+    <main>
+        <section id="meni"><div id="hamburger">
+	<div class="linija linija-1"></div>
+	<div class="linija linija-2"></div>
+	<div class="linija linija-3"></div>
+	<div id="mini-logo">
+		&lt;code&gt;
+	</div>
+</div>
 
-Napraviti direktorijum `D:\Hugo` na nekom od diskova i u njemu direktorijum `Sites` u kome će biti smešteni sajtovi i direktorijum `bin` u koji treba raspakovati instalacioni fajl.
+<h1 id="logo"><a href="/">&lt;code&gt;</a></h1>
+<h3 id="parola">ChaSha coding blog</h3>
 
-## Podešavanje
+<nav>
+	<ul>
+		<li><a href="/"><i class="fas fa-home fa-fw"></i> Početna</a></li>
+		<li><a href="/oblasti/"><i class="fas fa-layer-group fa-fw"></i> Oblasti</a></li>
+		<li><a href="/kategorije/"><i class="fas fa-folder fa-fw"></i> Kategorije</a></li>
+		<li><a href="/reči/"><i class="fas fa-tag fa-fw"></i> Ključne reči</a></li>
+		<li><a href="/autori/"><i class="fas fa-user fa-fw"></i> Autori</a></li>
+		<li><a href="/arhiva/"><i class="fas fa-archive fa-fw"></i> Arhiva</a></li>
+	</ul>
+</nav>
 
-U windows-u dodati `D:\Hugo\bin\hugo.exe` u putanju (`PATH`) i testirati da li je **hugo** ispravno instaliran:
+<footer id="footer">
+	<em>
+		Copyright &copy; 2019 ChaSha
+	</em>
+</footer>
+</section>
+        <div id="zavesa"></div>
+        <section id="sadrzaj">
+<h1>Hugo instalacija i konfiguracija</h1>
+<p class="leading">Hugo - instalacija, konfiguracija i kreiranje novog sajta.</p>
 
-```shell
-D:\Hugo\Sites>hugo version
-```
 
-## Kreiranje novog sajta
+<h2 id="instalacija">Instalacija</h2>
 
-```shell
-D:\Hugo\Sites>hugo new site naziv-sajta
-D:\Hugo\Sites>cd naziv-sajta
-```
+<p>Skinuti poslednju verziju instalacionog fajla na sledećoj <a href="https://github.com/gohugoio/hugo/releases">lokaciji</a>.</p>
 
-## Struktura direktorijuma
+<p>Napraviti direktorijum <code>D:\Hugo</code> na nekom od diskova i u njemu direktorijum <code>Sites</code> u kome će biti smešteni sajtovi i direktorijum <code>bin</code> u koji treba raspakovati instalacioni fajl.</p>
 
-Struktura direktorijuma bi trebala da izgleda ovako:
+<h2 id="podešavanje">Podešavanje</h2>
 
-```shel
-.
+<p>U windows-u dodati <code>D:\Hugo\bin\hugo.exe</code> u putanju (<code>PATH</code>) i testirati da li je <strong>hugo</strong> ispravno instaliran:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites&gt;hugo version</code></pre></div>
+<h2 id="kreiranje-novog-sajta">Kreiranje novog sajta</h2>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites&gt;hugo new site naziv-sajta
+D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites&gt;cd naziv-sajta</code></pre></div>
+<h2 id="struktura-direktorijuma">Struktura direktorijuma</h2>
+
+<p>Struktura direktorijuma bi trebala da izgleda ovako:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shel" data-lang="shel">.
 ├── archetypes
 ├── content
 ├── data
 ├── layouts
 ├── static
 ├── themes
-└── config.toml
-```
+└── config.toml</code></pre></div>
+<h2 id="konfiguracija">Konfiguracija</h2>
 
-## Konfiguracija
+<p>Za konfigurisanje sajta <strong>hugo</strong> koristi <code>config.toml</code> fajl.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
 
-Za konfigurisanje sajta **hugo** koristi `config.toml` fajl.[^1]
-
-Kompletna lista predefinisanih promenjivih, koje se mogu koristiti u `config.toml` fajlu, i njihove podrazumevane vrednosti u zagradi.
+<p>Kompletna lista predefinisanih promenjivih, koje se mogu koristiti u <code>config.toml</code> fajlu, i njihove podrazumevane vrednosti u zagradi.</p>
 
 <dl>
 <dt>archetypeDir (“archetypes”)</dt>
@@ -329,9 +357,74 @@ Prati promene u fajl sistemu i ponovo kreira ako je potrebno.
 <dd>
 </dl>
 
-### config.toml fajl
+<h3 id="config-toml-fajl">config.toml fajl</h3>
+<div class="footnotes">
 
+<hr />
 
+<ol>
+<li id="fn:1">može koristiti i <code>config.yaml</code> ili <code>config.json</code>
+ <a class="footnote-return" href="#fnref:1">[nazad]</a></li>
+</ol>
+</div>
 
+</section>
+        <section id="dodatak">
+<div class="meta-data">
+	<table>
+		<tbody>
+			<tr>
+				<td><i class="fas fa-layer-group fa-fw"></i></td>
+				<td>Html</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-user fa-fw"></i></td>
+				<td>Chana</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-calendar-alt fa-fw"></i></td>
+				<td>15.07.2019 u 20:52</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-file-alt fa-fw"></i></td>
+				<td>815 reči</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-stopwatch fa-fw"></i></td>
+				<td>4 min</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-folder fa-fw"></i></td>
+				<td>hugo, statički sajtovi</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-tag fa-fw"></i></td>
+				<td>hugo, statički sajt</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="toc">
+	<h5>Sadržaj strane</h5>
+	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#instalacija">Instalacija</a></li>
+<li><a href="#podešavanje">Podešavanje</a></li>
+<li><a href="#kreiranje-novog-sajta">Kreiranje novog sajta</a></li>
+<li><a href="#struktura-direktorijuma">Struktura direktorijuma</a></li>
+<li><a href="#konfiguracija">Konfiguracija</a>
+<ul>
+<li><a href="#config-toml-fajl">config.toml fajl</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+</section>
+    </main>
+    <script src="code/js/blog.js"></script>
+</body>
 
-[^1]: može koristiti i `config.yaml` ili `config.json`
+</html>
