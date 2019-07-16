@@ -1,0 +1,46 @@
+{{ define "sadrzaj" }}
+<h1>{{ .Title }}</h1>
+<p class="leading">{{ .Summary }}</p>
+{{ .Content }}
+{{ end }}
+
+{{ define "dodatak" }}
+<div class="meta-data">
+	<table>
+		<tbody>
+			<tr>
+				<td><i class="fas fa-layer-group fa-fw"></i></td>
+				<td>{{ title .Type }}</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-user fa-fw"></i></td>
+				<td>{{ delimit .Params.autori ", " }}</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-calendar-alt fa-fw"></i></td>
+				<td>{{ dateFormat "02.01.2006 u 15:04" .Date }}</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-file-alt fa-fw"></i></td>
+				<td>{{ .WordCount }} reči</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-stopwatch fa-fw"></i></td>
+				<td>{{ .ReadingTime }} min</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-folder fa-fw"></i></td>
+				<td>{{ delimit .Params.kategorije ", " }}</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-tag fa-fw"></i></td>
+				<td>{{ delimit .Params.reči ", " }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="toc">
+	<h5>Sadržaj strane</h5>
+	{{ .TableOfContents }}
+</div>
+{{ end }}

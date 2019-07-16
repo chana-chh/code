@@ -1,0 +1,17 @@
+{{ define "sadrzaj" }}
+<h1><i class="fas fa-layer-group fa-fw"></i> OBLASTI</h1>
+<hr>
+{{ range sort .Site.Sections "Title" }}
+{{ $naziv := lower .Title }}
+<h3 class="pretraga" data-naziv="{{ $naziv }}">
+	<span class="tag">{{ len (where .Site.RegularPages "Section" "==" $naziv) }}</span> &nbsp;&nbsp;
+	<a href="/{{ $naziv }}/">{{ $naziv }}</a>
+</h3>
+{{ end }}
+{{end}}
+
+{{define "dodatak"}}
+<label for="pretraga"><i class="fas fa-search"></i> Pronađi</label>
+<input type="text" name="pretraga" id="pretraga">
+<button id="prikazi-sve">Prikaži sve</button>
+{{end}}

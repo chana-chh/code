@@ -1,0 +1,15 @@
+baseURL = "code"
+languageCode = "sr"
+title = "ChaSha Coding Blog"
+paginate = 5
+paginatePath = "strana"
+pluralizeListTitles = false
+pygmentsCodeFences = true
+footnoteReturnLinkContents = "[nazad]"
+pygmentsStyle = "native" # monokai
+publishDir = "document"
+[taxonomies]
+	kategorija = "kategorije"
+	rec = "reči"
+	autor = "autori"
+	mesec = "arhiva"

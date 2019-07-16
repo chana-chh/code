@@ -1,0 +1,31 @@
+{{ define "sadrzaj" }}
+{{ if eq .Title "Reči" }}
+<h1><i class="fas fa-tag fa-fw"></i> KLJUČNE REČI</h1>
+{{ else if eq .Title "Kategorije" }}
+<h1><i class="fas fa-folder fa-fw"></i> KATEGORIJE</h1>
+{{ else if eq .Title "Autori" }}
+<h1><i class="fas fa-user fa-fw"></i> AUTORI</h1>
+{{ else if eq .Title "Arhiva" }}
+<h1><i class="fas fa-archive fa-fw"></i> ARHIVA</h1>
+{{ else }}
+<h1>{{ upper .Title }}</h1>
+{{ end }}
+<hr>
+{{ $type := .Type }}
+{{ range $key, $value := .Data.Terms.Alphabetical }}
+{{ $name := .Name }}
+{{ $count := .Count }}
+{{ with $.Site.GetPage (printf "/%s/%s" $type $name) }}
+<h3 class="pretraga" data-naziv="{{ .Title }}">
+	<span class="tag">{{ printf "%d" $count }}</span> &nbsp;&nbsp;
+	<a href="{{ .Permalink }}">{{ .Title }}</a>
+</h3>
+{{ end }}
+{{ end }}
+{{ end }}
+
+{{ define "dodatak" }}
+<label for="pretraga"><i class="fas fa-search"></i> Pronađi</label>
+<input type="text" name="pretraga" id="pretraga">
+<button id="prikazi-sve">Prikaži sve</button>
+{{ end }}

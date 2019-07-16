@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+{{ partial "head.html" . }}
+
+<body>
+    <main>
+        <section id="meni">{{ partial "meni.html" }}</section>
+        <div id="zavesa"></div>
+        <section id="sadrzaj">{{ block "sadrzaj" . }}{{ end }}</section>
+        <section id="dodatak">{{ block "dodatak" . }}{{ end }}</section>
+    </main>
+    <script src="{{ "js/blog.js" | absURL }}"></script>
+</body>
+
+</html>

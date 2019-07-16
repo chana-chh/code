@@ -1,0 +1,20 @@
+{{ define "sadrzaj" }}
+{{ $ikonica := "fa-layer-group" }}
+{{ if eq .Type "kategorije"}} {{ $ikonica = "fa-folder" }} {{ end }}
+{{ if eq .Type "reči"}} {{ $ikonica = "fa-tag" }} {{ end }}
+{{ if eq .Type "autori"}} {{ $ikonica = "fa-user" }} {{ end }}
+{{ if eq .Type "arhiva"}} {{ $ikonica = "fa-archive" }} {{ end }}
+<h1><i class="fas {{ $ikonica }} fa-fw"></i> {{ upper .Title }}</h1>
+<hr>
+{{ range .Paginator.Pages }}
+{{ if not .Params.hide_in_list }}
+{{ partial "item" . }}
+{{ end }}
+{{ end }}
+{{ template "_internal/pagination.html" . }}
+{{ end }}
+
+{{define "dodatak"}}
+<h1>???</h1>
+<p>reklame, odabrani/vazni clanci, mudrolije</p>
+{{end}}
