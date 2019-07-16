@@ -28,5 +28,10 @@ D:\Hugo\Sites\code>git add --all
 D:\Hugo\Sites\code>git commit -m "initial commit"
 D:\Hugo\Sites\code>git push -u origin master
 ```
+Podesiti `config.toml` fajl tako da *hugo* generise sajt u direktorijumu `docs`.
+
+```toml
+publishDir = "docs"
+```
 
 Na GitHub-u otvoriti *Settings* u *code* repozitorijumu i u delu *GitHub Pages* odabrati *Source* *master branch/docs folder*.
