@@ -9,7 +9,7 @@ description: ""
 kategorije: []
 reči: []
 autori: []
-mesec: "2019-07"
+arhiva: "2019-07"
 ---
 
 Hugo je instaliran u `D:\Hugo\bin\`, a sajtovi se nalaze u `D:\Hugo\Sites\`

@@ -9,7 +9,7 @@ description: "Hugo generator statičkih sajtova"
 kategorije: ["hugo", "statički sajtovi"]
 reči: ["hugo", "statički sajt"]
 autori: ["Chana"]
-mesec: "2019-07"
+arhiva: "2019-07"
 ---
 
 ## Instalacija

@@ -9,5 +9,5 @@ description: ""
 kategorije: []
 reči: []
 autori: []
-mesec: "{{ dateFormat "2006-01" .Date }}"
+arhiva: "{{ dateFormat "2006-01" .Date }}"
 ---

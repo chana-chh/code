@@ -3,6 +3,18 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://chana-chh.github.io/code/arhiva/2019-07/</loc>
+    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/arhiva/</loc>
+    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://chana-chh.github.io/code/autori/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
     <priority>0</priority>
@@ -64,11 +76,6 @@
   <url>
     <loc>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-sajtovi/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chana-chh.github.io/code/arhiva/</loc>
     <priority>0</priority>
   </url>
   
