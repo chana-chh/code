@@ -5,7 +5,7 @@
 {{ $naziv := lower .Title }}
 <h3 class="pretraga" data-naziv="{{ $naziv }}">
 	<span class="tag">{{ len (where .Site.RegularPages "Section" "==" $naziv) }}</span> &nbsp;&nbsp;
-	<a href="/{{ $naziv | absURL}}/">{{ $naziv }}</a>
+	<a href="{{ $naziv | absURL}}">{{ $naziv }}</a>
 </h3>
 {{ end }}
 {{end}}
