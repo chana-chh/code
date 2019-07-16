@@ -331,7 +331,23 @@ Prati promene u fajl sistemu i ponovo kreira ako je potrebno.
 
 ### config.toml fajl
 
-
+```toml
+baseURL = "https://chana-chh.github.io/code/"
+languageCode = "sr"
+title = "ChaSha Coding Blog"
+paginate = 5
+paginatePath = "strana"
+pluralizeListTitles = false
+pygmentsCodeFences = true
+footnoteReturnLinkContents = "[nazad]"
+pygmentsStyle = "native" # monokai
+publishDir = "docs"
+[taxonomies]
+	kategorija = "kategorije"
+	rec = "reči"
+	autor = "autori"
+	mesec = "arhiva"
+```
 
 
 [^1]: može koristiti i `config.yaml` ili `config.json`
