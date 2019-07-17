@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://chana-chh.github.io/code/css/brands.min.css">
 	<link rel="stylesheet" href="https://chana-chh.github.io/code/css/blog.css">
 	<meta name="keywords" content="hugo,generator statičkih sajtova">
-	<meta name="description" content="Hugo generator statičkih sajtova">
+	<meta name="description" content="Instalacija i podešavanje Hugo generatora statičkih sajtova">
 </head>
 
 
@@ -49,20 +49,20 @@
         <div id="zavesa"></div>
         <section id="sadrzaj">
 <h1>Hugo instalacija i konfiguracija</h1>
-<p class="leading">Hugo - instalacija, konfiguracija i kreiranje novog sajta.</p>
+<p class="leading">Hugo - instalacija, konfiguracija i kreiranje novog web sajta.</p>
 
 
 <h2 id="instalacija">Instalacija</h2>
 
 <p>Skinuti poslednju verziju instalacionog fajla na sledećoj <a href="https://github.com/gohugoio/hugo/releases">lokaciji</a>.</p>
 
-<p>Napraviti direktorijum <code>D:\Hugo</code> na nekom od diskova i u njemu direktorijum <code>Sites</code> u kome će biti smešteni sajtovi i direktorijum <code>bin</code> u koji treba raspakovati instalacioni fajl.</p>
+<p>Napraviti direktorijum <code>D:\Hugo</code> na nekom od diskova i u njemu direktorijum <code>Sites</code> u kome će biti smešteni web sajtovi i direktorijum <code>bin</code> u koji treba raspakovati instalacioni fajl.</p>
 
 <h2 id="podešavanje">Podešavanje</h2>
 
 <p>U windows-u dodati <code>D:\Hugo\bin\hugo.exe</code> u putanju (<code>PATH</code>) i testirati da li je <strong>hugo</strong> ispravno instaliran:</p>
 <div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites&gt;hugo version</code></pre></div>
-<h2 id="kreiranje-novog-sajta">Kreiranje novog sajta</h2>
+<h2 id="kreiranje-novog-web-sajta">Kreiranje novog web sajta</h2>
 <div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites&gt;hugo new site naziv-sajta
 D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites&gt;cd naziv-sajta</code></pre></div>
 <h2 id="struktura-direktorijuma">Struktura direktorijuma</h2>
@@ -78,7 +78,7 @@ D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>i
 └── config.toml</code></pre></div>
 <h2 id="konfiguracija">Konfiguracija</h2>
 
-<p>Za konfigurisanje sajta <strong>hugo</strong> koristi <code>config.toml</code> fajl.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
+<p>Za konfigurisanje web sajta <strong>hugo</strong> koristi <code>config.toml</code> fajl.<sup class="footnote-ref" id="fnref:1"><a href="#fn:1">1</a></sup></p>
 
 <p>Kompletna lista predefinisanih promenjivih, koje se mogu koristiti u <code>config.toml</code> fajlu, i njihove podrazumevane vrednosti u zagradi.</p>
 
@@ -93,23 +93,23 @@ Direktorijum gde se nalaze asset fajlovi (`sass`, `scss`, `js` ...) koje treba k
 </dd>
 <dt>baseURL</dt>
 <dd>
-Osnovna putanja sajta , npr. `http://naziv-sajta.com/`
+Osnovna putanja web sajta , npr. `http://naziv-sajta.com/`
 <dd>
 <dt>blackfriday</dt>
 <dd>
-Blackfriday je rendering engine za markdown.
+Blackfriday podešavanje. Blackfriday je rendering engine za markdown.
 <dd>
 <dt>buildDrafts (false)</dt>
 <dd>
-Kada je postavljeno na `true` uključuje i draftove prilikom pravljenja sajta.
+Kada je postavljeno na `true` uključuje i draftove prilikom pravljenja web sajta.
 <dd>
 <dt>buildExpired (false)</dt>
 <dd>
-Kada je postavljeno na `true` uključuje i istekle članke prilikom pravljenja sajta.
+Kada je postavljeno na `true` uključuje i istekle članke prilikom pravljenja web sajta.
 <dd>
 <dt>buildFuture (false)</dt>
 <dd>
-Kada je postavljeno na `true` uključuje i članke kojima je datum izdavanja u budućnosti prilikom pravljenja sajta.
+Kada je postavljeno na `true` uključuje i članke kojima je datum izdavanja u budućnosti prilikom pravljenja web sajta.
 <dd>
 <dt>caches</dt>
 <dd>
@@ -133,7 +133,7 @@ Sadržaj bez oznake jezika će biti postavljen na ovaj jezik.
 <dd>
 <dt>defaultContentLanguageInSubdir (false)</dt>
 <dd>
-Koristi podrazumevani jezik iz direktorijuma. Na primer `content/sr/`. Ruta sajta `/` se tada prebacuje na `/sr/`.
+Koristi podrazumevani jezik iz direktorijuma. Na primer `content/sr/`. Ruta web sajta `/` se tada prebacuje na `/sr/`.
 <dd>
 <dt>disableAliases (false)</dt>
 <dd>
@@ -145,7 +145,7 @@ Podrazumevano ubacivanje hugo meta taga u HTML na home stranici.
 <dd>
 <dt>disableKinds ([])</dt>
 <dd>
-Onemogućavanje određenih vrsta stranica. Doyvoljene vrednosti su: "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404".
+Onemogućavanje određenih vrsta stranica. Dozvoljene vrednosti su: "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404".
 <dd>
 <dt>disableLiveReload (false)</dt>
 <dd>
@@ -181,7 +181,7 @@ Front matter podešavanje.
 <dd>
 <dt>footnoteAnchorPrefix (“”)</dt>
 <dd>
-Prefiks za footnote sidra (linkove).
+Prefiks za footnote linkove.
 <dd>
 <dt>footnoteReturnLinkContents (“”)</dt>
 <dd>
@@ -213,11 +213,11 @@ Naziv jezika sajta.
 <dd>
 <dt>disableLanguages</dt>
 <dd>
-Onemogućava jedan ili više jezika (prevoda) sajta. Nije moguće onemogućiti podrazumevani jezik.
+Onemogućava jedan ili više jezika (prevoda) web sajta. Nije moguće onemogućiti podrazumevani jezik.
 <dd>
 <dt>layoutDir (“layouts”)</dt>
 <dd>
-Direktorijum sa šablonima sajta.
+Direktorijum sa šablonima web sajta.
 <dd>
 <dt>log (false)</dt>
 <dd>
@@ -249,7 +249,7 @@ Onemogućava sinhronizovanje vremena izmene fajlova.
 <dd>
 <dt>paginate (10)</dt>
 <dd>
-Podrazumevani broj elemenata za straničenje.
+Podrazumevani broj elemenata po strani za straničenje.
 <dd>
 <dt>paginatePath (“page”)</dt>
 <dd>
@@ -265,7 +265,7 @@ Pluralizacija naslova u listama.
 <dd>
 <dt>publishDir (“public”)</dt>
 <dd>
-Direktorijum gde se kreira konačni statički sajt.
+Direktorijum gde se kreira konačni statički web sajt.
 <dd>
 <dt>pygmentsCodeFencesGuessSyntax (false)</dt>
 <dd>
@@ -297,7 +297,7 @@ URL koji će se koristiti kao placeholder kada referenca na stranicu ne može bi
 <dd>
 <dt>rssLimit (unlimited)</dt>
 <dd>
-maksimalan broj stavki u RSS.
+Maksimalan broj stavki u RSS.
 <dd>
 <dt>sectionPagesMenu (“”)</dt>
 <dd>
@@ -305,7 +305,7 @@ Naziv automatskog menija sa sekcijama.
 <dd>
 <dt>sitemap</dt>
 <dd>
-Podrazumevana podešavanja za sitemap
+Podrazumevana podešavanja za mapu web sajta.
 <dd>
 <dt>staticDir (“static”)</dt>
 <dd>
@@ -325,7 +325,7 @@ Tema koja se koristi (podrazumevano se nalazi u /themes/naziv-teme/).
 <dd>
 <dt>themesDir (“themes”)</dt>
 <dd>
-Direktorijum iy koga se preuzimaju teme
+Direktorijum iz koga se preuzimaju teme
 <dd>
 <dt>timeout (10000)</dt>
 <dd>
@@ -345,11 +345,11 @@ Omogućava kreiranje URL-ova u obliku `/filename.html` umesto `/filename/`.
 <dd>
 <dt>verbose (false)</dt>
 <dd>
-Omogućava verbose prikaz.
+Omogućava opširni prikaz.
 <dd>
 <dt>verboseLog (false)</dt>
 <dd>
-Omogućava verbose zapisivanje u log.
+Omogućava opširno zapisivanje u log.
 <dd>
 <dt>watch (false)</dt>
 <dd>
@@ -357,7 +357,7 @@ Prati promene u fajl sistemu i ponovo kreira ako je potrebno.
 <dd>
 </dl>
 
-<h3 id="config-toml-fajl">config.toml fajl</h3>
+<h3 id="config-toml-fajl"><code>config.toml</code> fajl</h3>
 <div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">baseURL = <span style="color:#ed9d13">&#34;https://chana-chh.github.io/code/&#34;</span>
 languageCode = <span style="color:#ed9d13">&#34;sr&#34;</span>
 title = <span style="color:#ed9d13">&#34;ChaSha Coding Blog&#34;</span>
@@ -401,7 +401,7 @@ publishDir = <span style="color:#ed9d13">&#34;docs&#34;</span>
 			</tr>
 			<tr>
 				<td><i class="fas fa-file-alt fa-fw"></i></td>
-				<td>862 reči</td>
+				<td>878 reči</td>
 			</tr>
 			<tr>
 				<td><i class="fas fa-stopwatch fa-fw"></i></td>
@@ -409,11 +409,11 @@ publishDir = <span style="color:#ed9d13">&#34;docs&#34;</span>
 			</tr>
 			<tr>
 				<td><i class="fas fa-folder fa-fw"></i></td>
-				<td>hugo, statički sajtovi</td>
+				<td>hugo, statički web sajtovi</td>
 			</tr>
 			<tr>
 				<td><i class="fas fa-tag fa-fw"></i></td>
-				<td>hugo, statički sajt</td>
+				<td>hugo, statički web sajt</td>
 			</tr>
 		</tbody>
 	</table>
@@ -426,11 +426,11 @@ publishDir = <span style="color:#ed9d13">&#34;docs&#34;</span>
 <ul>
 <li><a href="#instalacija">Instalacija</a></li>
 <li><a href="#podešavanje">Podešavanje</a></li>
-<li><a href="#kreiranje-novog-sajta">Kreiranje novog sajta</a></li>
+<li><a href="#kreiranje-novog-web-sajta">Kreiranje novog web sajta</a></li>
 <li><a href="#struktura-direktorijuma">Struktura direktorijuma</a></li>
 <li><a href="#konfiguracija">Konfiguracija</a>
 <ul>
-<li><a href="#config-toml-fajl">config.toml fajl</a></li>
+<li><a href="#config-toml-fajl"><code>config.toml</code> fajl</a></li>
 </ul></li>
 </ul></li>
 </ul>

@@ -6,26 +6,44 @@
     <description>Recent content in Reči on ChaSha Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>sr</language>
-    <lastBuildDate>Mon, 15 Jul 2019 20:52:22 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jul 2019 23:02:05 +0200</lastBuildDate>
     
 	<atom:link href="https://chana-chh.github.io/code/re%C4%8Di/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>GitHub</title>
+      <link>https://chana-chh.github.io/code/re%C4%8Di/github/</link>
+      <pubDate>Tue, 16 Jul 2019 23:02:05 +0200</pubDate>
+      
+      <guid>https://chana-chh.github.io/code/re%C4%8Di/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>hugo</title>
       <link>https://chana-chh.github.io/code/re%C4%8Di/hugo/</link>
-      <pubDate>Mon, 15 Jul 2019 20:52:22 +0200</pubDate>
+      <pubDate>Tue, 16 Jul 2019 23:02:05 +0200</pubDate>
       
       <guid>https://chana-chh.github.io/code/re%C4%8Di/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>statički sajt</title>
-      <link>https://chana-chh.github.io/code/re%C4%8Di/stati%C4%8Dki-sajt/</link>
-      <pubDate>Mon, 15 Jul 2019 20:52:22 +0200</pubDate>
+      <title>postavljanje web sajta</title>
+      <link>https://chana-chh.github.io/code/re%C4%8Di/postavljanje-web-sajta/</link>
+      <pubDate>Tue, 16 Jul 2019 23:02:05 +0200</pubDate>
       
-      <guid>https://chana-chh.github.io/code/re%C4%8Di/stati%C4%8Dki-sajt/</guid>
+      <guid>https://chana-chh.github.io/code/re%C4%8Di/postavljanje-web-sajta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statički web sajt</title>
+      <link>https://chana-chh.github.io/code/re%C4%8Di/stati%C4%8Dki-web-sajt/</link>
+      <pubDate>Tue, 16 Jul 2019 23:02:05 +0200</pubDate>
+      
+      <guid>https://chana-chh.github.io/code/re%C4%8Di/stati%C4%8Dki-web-sajt/</guid>
       <description></description>
     </item>
     

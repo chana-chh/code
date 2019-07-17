@@ -2,12 +2,12 @@
 title: "Hugo instalacija i konfiguracija"
 date: 2019-07-15T20:52:22+02:00
 draft: false
-summary: "Hugo - instalacija, konfiguracija i kreiranje novog sajta."
+summary: "Hugo - instalacija, konfiguracija i kreiranje novog web sajta."
 slug: "hugo-instalacija-i-konfiguracija"
 keywords: ["hugo", "generator statičkih sajtova"]
-description: "Hugo generator statičkih sajtova"
-kategorije: ["hugo", "statički sajtovi"]
-reči: ["hugo", "statički sajt"]
+description: "Instalacija i podešavanje Hugo generatora statičkih sajtova"
+kategorije: ["hugo", "statički web sajtovi"]
+reči: ["hugo", "statički web sajt"]
 autori: ["Chana"]
 arhiva: "2019-07"
 ---
@@ -16,7 +16,7 @@ arhiva: "2019-07"
 
 Skinuti poslednju verziju instalacionog fajla na sledećoj [lokaciji](https://github.com/gohugoio/hugo/releases).
 
-Napraviti direktorijum `D:\Hugo` na nekom od diskova i u njemu direktorijum `Sites` u kome će biti smešteni sajtovi i direktorijum `bin` u koji treba raspakovati instalacioni fajl.
+Napraviti direktorijum `D:\Hugo` na nekom od diskova i u njemu direktorijum `Sites` u kome će biti smešteni web sajtovi i direktorijum `bin` u koji treba raspakovati instalacioni fajl.
 
 ## Podešavanje
 
@@ -26,7 +26,7 @@ U windows-u dodati `D:\Hugo\bin\hugo.exe` u putanju (`PATH`) i testirati da li j
 D:\Hugo\Sites>hugo version
 ```
 
-## Kreiranje novog sajta
+## Kreiranje novog web sajta
 
 ```shell
 D:\Hugo\Sites>hugo new site naziv-sajta
@@ -50,7 +50,7 @@ Struktura direktorijuma bi trebala da izgleda ovako:
 
 ## Konfiguracija
 
-Za konfigurisanje sajta **hugo** koristi `config.toml` fajl.[^1]
+Za konfigurisanje web sajta **hugo** koristi `config.toml` fajl.[^1]
 
 Kompletna lista predefinisanih promenjivih, koje se mogu koristiti u `config.toml` fajlu, i njihove podrazumevane vrednosti u zagradi.
 
@@ -65,23 +65,23 @@ Direktorijum gde se nalaze asset fajlovi (`sass`, `scss`, `js` ...) koje treba k
 </dd>
 <dt>baseURL</dt>
 <dd>
-Osnovna putanja sajta , npr. `http://naziv-sajta.com/`
+Osnovna putanja web sajta , npr. `http://naziv-sajta.com/`
 <dd>
 <dt>blackfriday</dt>
 <dd>
-Blackfriday je rendering engine za markdown.
+Blackfriday podešavanje. Blackfriday je rendering engine za markdown.
 <dd>
 <dt>buildDrafts (false)</dt>
 <dd>
-Kada je postavljeno na `true` uključuje i draftove prilikom pravljenja sajta.
+Kada je postavljeno na `true` uključuje i draftove prilikom pravljenja web sajta.
 <dd>
 <dt>buildExpired (false)</dt>
 <dd>
-Kada je postavljeno na `true` uključuje i istekle članke prilikom pravljenja sajta.
+Kada je postavljeno na `true` uključuje i istekle članke prilikom pravljenja web sajta.
 <dd>
 <dt>buildFuture (false)</dt>
 <dd>
-Kada je postavljeno na `true` uključuje i članke kojima je datum izdavanja u budućnosti prilikom pravljenja sajta.
+Kada je postavljeno na `true` uključuje i članke kojima je datum izdavanja u budućnosti prilikom pravljenja web sajta.
 <dd>
 <dt>caches</dt>
 <dd>
@@ -105,7 +105,7 @@ Sadržaj bez oznake jezika će biti postavljen na ovaj jezik.
 <dd>
 <dt>defaultContentLanguageInSubdir (false)</dt>
 <dd>
-Koristi podrazumevani jezik iz direktorijuma. Na primer `content/sr/`. Ruta sajta `/` se tada prebacuje na `/sr/`.
+Koristi podrazumevani jezik iz direktorijuma. Na primer `content/sr/`. Ruta web sajta `/` se tada prebacuje na `/sr/`.
 <dd>
 <dt>disableAliases (false)</dt>
 <dd>
@@ -117,7 +117,7 @@ Podrazumevano ubacivanje hugo meta taga u HTML na home stranici.
 <dd>
 <dt>disableKinds ([])</dt>
 <dd>
-Onemogućavanje određenih vrsta stranica. Doyvoljene vrednosti su: "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404".
+Onemogućavanje određenih vrsta stranica. Dozvoljene vrednosti su: "page", "home", "section", "taxonomy", "taxonomyTerm", "RSS", "sitemap", "robotsTXT", "404".
 <dd>
 <dt>disableLiveReload (false)</dt>
 <dd>
@@ -153,7 +153,7 @@ Front matter podešavanje.
 <dd>
 <dt>footnoteAnchorPrefix (“”)</dt>
 <dd>
-Prefiks za footnote sidra (linkove).
+Prefiks za footnote linkove.
 <dd>
 <dt>footnoteReturnLinkContents (“”)</dt>
 <dd>
@@ -185,11 +185,11 @@ Naziv jezika sajta.
 <dd>
 <dt>disableLanguages</dt>
 <dd>
-Onemogućava jedan ili više jezika (prevoda) sajta. Nije moguće onemogućiti podrazumevani jezik.
+Onemogućava jedan ili više jezika (prevoda) web sajta. Nije moguće onemogućiti podrazumevani jezik.
 <dd>
 <dt>layoutDir (“layouts”)</dt>
 <dd>
-Direktorijum sa šablonima sajta.
+Direktorijum sa šablonima web sajta.
 <dd>
 <dt>log (false)</dt>
 <dd>
@@ -221,7 +221,7 @@ Onemogućava sinhronizovanje vremena izmene fajlova.
 <dd>
 <dt>paginate (10)</dt>
 <dd>
-Podrazumevani broj elemenata za straničenje.
+Podrazumevani broj elemenata po strani za straničenje.
 <dd>
 <dt>paginatePath (“page”)</dt>
 <dd>
@@ -237,7 +237,7 @@ Pluralizacija naslova u listama.
 <dd>
 <dt>publishDir (“public”)</dt>
 <dd>
-Direktorijum gde se kreira konačni statički sajt.
+Direktorijum gde se kreira konačni statički web sajt.
 <dd>
 <dt>pygmentsCodeFencesGuessSyntax (false)</dt>
 <dd>
@@ -269,7 +269,7 @@ URL koji će se koristiti kao placeholder kada referenca na stranicu ne može bi
 <dd>
 <dt>rssLimit (unlimited)</dt>
 <dd>
-maksimalan broj stavki u RSS.
+Maksimalan broj stavki u RSS.
 <dd>
 <dt>sectionPagesMenu (“”)</dt>
 <dd>
@@ -277,7 +277,7 @@ Naziv automatskog menija sa sekcijama.
 <dd>
 <dt>sitemap</dt>
 <dd>
-Podrazumevana podešavanja za sitemap
+Podrazumevana podešavanja za mapu web sajta.
 <dd>
 <dt>staticDir (“static”)</dt>
 <dd>
@@ -297,7 +297,7 @@ Tema koja se koristi (podrazumevano se nalazi u /themes/naziv-teme/).
 <dd>
 <dt>themesDir (“themes”)</dt>
 <dd>
-Direktorijum iy koga se preuzimaju teme
+Direktorijum iz koga se preuzimaju teme
 <dd>
 <dt>timeout (10000)</dt>
 <dd>
@@ -317,11 +317,11 @@ Omogućava kreiranje URL-ova u obliku `/filename.html` umesto `/filename/`.
 <dd>
 <dt>verbose (false)</dt>
 <dd>
-Omogućava verbose prikaz.
+Omogućava opširni prikaz.
 <dd>
 <dt>verboseLog (false)</dt>
 <dd>
-Omogućava verbose zapisivanje u log.
+Omogućava opširno zapisivanje u log.
 <dd>
 <dt>watch (false)</dt>
 <dd>
@@ -329,7 +329,7 @@ Prati promene u fajl sistemu i ponovo kreira ako je potrebno.
 <dd>
 </dl>
 
-### config.toml fajl
+### `config.toml` fajl
 
 ```toml
 baseURL = "https://chana-chh.github.io/code/"
@@ -348,6 +348,5 @@ publishDir = "docs"
 	autor = "autori"
 	mesec = "arhiva"
 ```
-
 
 [^1]: može koristiti i `config.yaml` ili `config.json`

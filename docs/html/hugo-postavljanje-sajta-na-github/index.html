@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hugo postavljanje sajta na GitHub - ChaSha Coding Blog</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://chana-chh.github.io/code/css/fontawesome.min.css">
+	<link rel="stylesheet" href="https://chana-chh.github.io/code/css/solid.min.css">
+	<link rel="stylesheet" href="https://chana-chh.github.io/code/css/brands.min.css">
+	<link rel="stylesheet" href="https://chana-chh.github.io/code/css/blog.css">
+	<meta name="keywords" content="hugo,statički web sajt,GitHub,besplatno postavljane web sajta">
+	<meta name="description" content="GitHub omogućava postavljanje besplatnog statičkog sajta. Postavljanje statičkog Hugo sajta na GitHub.">
+</head>
+
+
+<body>
+    <main>
+        <section id="meni"><div id="hamburger">
+	<div class="linija linija-1"></div>
+	<div class="linija linija-2"></div>
+	<div class="linija linija-3"></div>
+	<div id="mini-logo">
+		&lt;code&gt;
+	</div>
+</div>
+
+<h1 id="logo"><a href="https://chana-chh.github.io/code/">&lt;code&gt;</a></h1>
+<h3 id="parola">ChaSha coding blog</h3>
+
+<nav>
+	<ul>
+		<li><a href="https://chana-chh.github.io/code/"><i class="fas fa-home fa-fw"></i> Početna</a></li>
+		<li><a href="https://chana-chh.github.io/code/oblasti/"><i class="fas fa-layer-group fa-fw"></i> Oblasti</a></li>
+		<li><a href="https://chana-chh.github.io/code/kategorije/"><i class="fas fa-folder fa-fw"></i> Kategorije</a></li>
+		<li><a href="https://chana-chh.github.io/code/re%C4%8Di/"><i class="fas fa-tag fa-fw"></i> Ključne reči</a></li>
+		<li><a href="https://chana-chh.github.io/code/autori/"><i class="fas fa-user fa-fw"></i> Autori</a></li>
+		<li><a href="https://chana-chh.github.io/code/arhiva/"><i class="fas fa-archive fa-fw"></i> Arhiva</a></li>
+	</ul>
+</nav>
+
+<footer id="footer">
+	<em>
+		Copyright &copy; 2019 ChaSha
+	</em>
+</footer>
+</section>
+        <div id="zavesa"></div>
+        <section id="sadrzaj">
+<h1>Hugo postavljanje sajta na GitHub</h1>
+<p class="leading">Postavljanje statičkog Hugo sajta na GitHub.</p>
+
+
+<h2 id="naziv-i-direktorijumi-web-sajta">Naziv i direktorijumi web sajta</h2>
+
+<p>Pretpostavka je da je:</p>
+
+<ul>
+<li>Hugo je instaliran u <code>D:\Hugo\bin\</code>,</li>
+<li>da se sajtovi se nalaze u <code>D:\Hugo\Sites\</code>,</li>
+<li>naziv sajta <em>code</em> i da se nalazi u <code>D:\Hugo\Sites\code\</code>.</li>
+</ul>
+
+<h2 id="git-i-github">Git i GitHub</h2>
+
+<p>Inicijalizacija lokalnog git repozitorijuma:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git init</code></pre></div>
+<p>Na GitHub-u napraviti novi repozitorijum sa nazivom <em>code</em> i dodati lokalni repozitorijum:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git remote add origin https://github.com/chana-chh/code.git
+D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git add --all
+D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git commit -m <span style="color:#ed9d13">&#34;initial commit&#34;</span>
+D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git push -u origin master</code></pre></div>
+<h2 id="kreiranje-web-sajta-i-postavljanje-na-github">Kreiranje web sajta i postavljanje na GitHub</h2>
+
+<p>Podesiti <code>config.toml</code> fajl tako da <em>hugo</em> generise sajt u direktorijumu <code>docs</code> umesto u podrazumevanom direktorijumu <code>public</code>.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">publishDir = <span style="color:#ed9d13">&#34;docs&#34;</span></code></pre></div>
+<p>Napraviti <em>hugo</em> statički web sajt lokalno.</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;hugo</code></pre></div>
+<p>Postaviti lokalne promene repozitorijuma na GitHub:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git add --all
+D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git commit -m <span style="color:#ed9d13">&#34;site&#34;</span>
+D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git push -u origin master</code></pre></div>
+<p>Na GitHub-u otvoriti <em>Settings</em> u <em>code</em> repozitorijumu i u delu <em>GitHub Pages</em> odabrati <em>Source</em> <em>master branch/docs folder</em>.</p>
+
+<p>Web sajt će biti na adresi <em>https://github-profile-name.github.io/repository-name/</em></p>
+
+<p>Nakon izmene sadržaja web sajta, da bi se osvežio web sajt na GitHub-u potrebno je rekreirati web sajt lokalno,</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;hugo</code></pre></div>
+<p>a zatim postaviti lokalne promene repozitorijuma na GitHub:</p>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git add --all
+D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git commit -m <span style="color:#ed9d13">&#34;site&#34;</span>
+D:<span style="color:#ed9d13">\H</span>ugo<span style="color:#ed9d13">\S</span>ites<span style="color:#ed9d13">\c</span>ode&gt;git push -u origin master</code></pre></div>
+<pre><code>Napomena: Samo članci koji su `draft: false` ulaze u sadržaj web sajta.
+</code></pre>
+
+</section>
+        <section id="dodatak">
+<div class="meta-data">
+	<table>
+		<tbody>
+			<tr>
+				<td><i class="fas fa-layer-group fa-fw"></i></td>
+				<td>Html</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-user fa-fw"></i></td>
+				<td>Chana</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-calendar-alt fa-fw"></i></td>
+				<td>16.07.2019 u 23:02</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-file-alt fa-fw"></i></td>
+				<td>196 reči</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-stopwatch fa-fw"></i></td>
+				<td>1 min</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-folder fa-fw"></i></td>
+				<td>hugo, statički web sajtovi, GitHub</td>
+			</tr>
+			<tr>
+				<td><i class="fas fa-tag fa-fw"></i></td>
+				<td>hugo, statički web sajt, GitHub, postavljanje web sajta</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="toc">
+	<h5>Sadržaj strane</h5>
+	<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#naziv-i-direktorijumi-web-sajta">Naziv i direktorijumi web sajta</a></li>
+<li><a href="#git-i-github">Git i GitHub</a></li>
+<li><a href="#kreiranje-web-sajta-i-postavljanje-na-github">Kreiranje web sajta i postavljanje na GitHub</a></li>
+</ul></li>
+</ul>
+</nav>
+</div>
+</section>
+    </main>
+    <script src="https://chana-chh.github.io/code/js/blog.js"></script>
+</body>
+
+</html>

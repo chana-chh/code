@@ -4,79 +4,102 @@
   
   <url>
     <loc>https://chana-chh.github.io/code/arhiva/2019-07/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chana-chh.github.io/code/arhiva/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chana-chh.github.io/code/autori/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chana-chh.github.io/code/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chana-chh.github.io/code/autori/chana/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/re%C4%8Di/github/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/kategorije/github/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chana-chh.github.io/code/html/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/html/hugo-postavljanje-sajta-na-github/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/kategorije/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/re%C4%8Di/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/re%C4%8Di/hugo/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/kategorije/hugo/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/re%C4%8Di/postavljanje-web-sajta/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/re%C4%8Di/stati%C4%8Dki-web-sajt/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-web-sajtovi/</loc>
+    <lastmod>2019-07-16T23:02:05+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://chana-chh.github.io/code/html/hugo-instalacija-i-konfiguracija/</loc>
     <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://chana-chh.github.io/code/kategorije/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chana-chh.github.io/code/re%C4%8Di/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chana-chh.github.io/code/re%C4%8Di/hugo/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chana-chh.github.io/code/kategorije/hugo/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chana-chh.github.io/code/re%C4%8Di/stati%C4%8Dki-sajt/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-sajtovi/</loc>
-    <lastmod>2019-07-15T20:52:22+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

@@ -6,26 +6,35 @@
     <description>Recent content in Kategorije on ChaSha Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>sr</language>
-    <lastBuildDate>Mon, 15 Jul 2019 20:52:22 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jul 2019 23:02:05 +0200</lastBuildDate>
     
 	<atom:link href="https://chana-chh.github.io/code/kategorije/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>GitHub</title>
+      <link>https://chana-chh.github.io/code/kategorije/github/</link>
+      <pubDate>Tue, 16 Jul 2019 23:02:05 +0200</pubDate>
+      
+      <guid>https://chana-chh.github.io/code/kategorije/github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>hugo</title>
       <link>https://chana-chh.github.io/code/kategorije/hugo/</link>
-      <pubDate>Mon, 15 Jul 2019 20:52:22 +0200</pubDate>
+      <pubDate>Tue, 16 Jul 2019 23:02:05 +0200</pubDate>
       
       <guid>https://chana-chh.github.io/code/kategorije/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>statički sajtovi</title>
-      <link>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-sajtovi/</link>
-      <pubDate>Mon, 15 Jul 2019 20:52:22 +0200</pubDate>
+      <title>statički web sajtovi</title>
+      <link>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-web-sajtovi/</link>
+      <pubDate>Tue, 16 Jul 2019 23:02:05 +0200</pubDate>
       
-      <guid>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-sajtovi/</guid>
+      <guid>https://chana-chh.github.io/code/kategorije/stati%C4%8Dki-web-sajtovi/</guid>
       <description></description>
     </item>
     
